@@ -571,18 +571,25 @@ body {
 
 .pw-eye {
     position: absolute;
-    top: 0;
+    top: 50%;
     right: 0;
+    transform: translateY(-50%);
     width: 2.75rem;
-    height: calc(1.5em + .75rem + 2px);
+    height: 100%;
     border: 0;
     background: none;
     color: var(--mute);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    line-height: 1;
+    padding: 0;
     cursor: pointer;
-    border-radius: 0 .375rem .375rem 0
+    border-radius: 0 .375rem .375rem 0;
+}
+
+.pw-eye svg {
+    display: block;
 }
 
 .pw-eye:hover {
